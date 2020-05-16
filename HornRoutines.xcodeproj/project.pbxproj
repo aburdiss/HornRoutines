@@ -15,6 +15,14 @@
 		9C694C41246ED97100BCD03B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C694C3F246ED97100BCD03B /* LaunchScreen.storyboard */; };
 		9C694C4C246ED97100BCD03B /* HornRoutinesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C694C4B246ED97100BCD03B /* HornRoutinesTests.swift */; };
 		9C694C57246ED97100BCD03B /* HornRoutinesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C694C56246ED97100BCD03B /* HornRoutinesUITests.swift */; };
+		9CB6830124707685000D4A67 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6830024707685000D4A67 /* MainView.swift */; };
+		9CB6830324707695000D4A67 /* RoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6830224707695000D4A67 /* RoutineView.swift */; };
+		9CB68305247076AA000D4A67 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB68304247076AA000D4A67 /* ListView.swift */; };
+		9CB68307247076C2000D4A67 /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB68306247076C2000D4A67 /* ExerciseDetailView.swift */; };
+		9CB68309247076D7000D4A67 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB68308247076D7000D4A67 /* SettingsView.swift */; };
+		9CB6830B247076EA000D4A67 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6830A247076EA000D4A67 /* Model.swift */; };
+		9CB6830D247076F6000D4A67 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6830C247076F6000D4A67 /* SettingsModel.swift */; };
+		9CB6830F24707708000D4A67 /* FavoritesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6830E24707708000D4A67 /* FavoritesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		9C694C52246ED97100BCD03B /* HornRoutinesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HornRoutinesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C694C56246ED97100BCD03B /* HornRoutinesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HornRoutinesUITests.swift; sourceTree = "<group>"; };
 		9C694C58246ED97100BCD03B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CB6830024707685000D4A67 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		9CB6830224707695000D4A67 /* RoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineView.swift; sourceTree = "<group>"; };
+		9CB68304247076AA000D4A67 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		9CB68306247076C2000D4A67 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
+		9CB68308247076D7000D4A67 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9CB6830A247076EA000D4A67 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9CB6830C247076F6000D4A67 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		9CB6830E24707708000D4A67 /* FavoritesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +118,14 @@
 				9C694C34246ED97000BCD03B /* AppDelegate.swift */,
 				9C694C36246ED97000BCD03B /* SceneDelegate.swift */,
 				9C694C38246ED97000BCD03B /* ContentView.swift */,
+				9CB6830024707685000D4A67 /* MainView.swift */,
+				9CB6830224707695000D4A67 /* RoutineView.swift */,
+				9CB68304247076AA000D4A67 /* ListView.swift */,
+				9CB68306247076C2000D4A67 /* ExerciseDetailView.swift */,
+				9CB68308247076D7000D4A67 /* SettingsView.swift */,
+				9CB6830A247076EA000D4A67 /* Model.swift */,
+				9CB6830C247076F6000D4A67 /* SettingsModel.swift */,
+				9CB6830E24707708000D4A67 /* FavoritesModel.swift */,
 				9C694C3A246ED97100BCD03B /* Assets.xcassets */,
 				9C694C3F246ED97100BCD03B /* LaunchScreen.storyboard */,
 				9C694C42246ED97100BCD03B /* Info.plist */,
@@ -267,7 +291,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB6830B247076EA000D4A67 /* Model.swift in Sources */,
+				9CB68307247076C2000D4A67 /* ExerciseDetailView.swift in Sources */,
+				9CB68309247076D7000D4A67 /* SettingsView.swift in Sources */,
 				9C694C35246ED97000BCD03B /* AppDelegate.swift in Sources */,
+				9CB6830124707685000D4A67 /* MainView.swift in Sources */,
+				9CB6830F24707708000D4A67 /* FavoritesModel.swift in Sources */,
+				9CB68305247076AA000D4A67 /* ListView.swift in Sources */,
+				9CB6830D247076F6000D4A67 /* SettingsModel.swift in Sources */,
+				9CB6830324707695000D4A67 /* RoutineView.swift in Sources */,
 				9C694C37246ED97000BCD03B /* SceneDelegate.swift in Sources */,
 				9C694C39246ED97000BCD03B /* ContentView.swift in Sources */,
 			);
