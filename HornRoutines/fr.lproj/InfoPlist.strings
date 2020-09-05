@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  HornRoutines
+
+  Created by Alexander Burdiss on 9/5/20.
+  Copyright © 2020 Alex Burdiss. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "Routines de Cor";
+"CFBundleName" = "Routines de Cor";

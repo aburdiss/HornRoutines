@@ -22,6 +22,7 @@
 		9CB68309247076D7000D4A67 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB68308247076D7000D4A67 /* SettingsView.swift */; };
 		9CB6830B247076EA000D4A67 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6830A247076EA000D4A67 /* Model.swift */; };
 		DD0EE4D92503CEB000505FBD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD0EE4DB2503CEB000505FBD /* Localizable.strings */; };
+		DD0EE4E82503D83200505FBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD0EE4EA2503D83200505FBD /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,10 @@
 		DD0EE4DC2503CEBF00505FBD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DD0EE4DD2503CEC900505FBD /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DD0EE4DE2503CED200505FBD /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DD0EE4E92503D83200505FBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD0EE4EB2503D83700505FBD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		DD0EE4EC2503D83800505FBD /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD0EE4ED2503D83A00505FBD /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +135,7 @@
 				9C694C3F246ED97100BCD03B /* LaunchScreen.storyboard */,
 				9C694C42246ED97100BCD03B /* Info.plist */,
 				9C694C3C246ED97100BCD03B /* Preview Content */,
+				DD0EE4EA2503D83200505FBD /* InfoPlist.strings */,
 			);
 			path = HornRoutines;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 				DD0EE4D92503CEB000505FBD /* Localizable.strings in Resources */,
 				9C694C3E246ED97100BCD03B /* Preview Assets.xcassets in Resources */,
 				9C694C3B246ED97100BCD03B /* Assets.xcassets in Resources */,
+				DD0EE4E82503D83200505FBD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +363,17 @@
 				DD0EE4DE2503CED200505FBD /* fr */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DD0EE4EA2503D83200505FBD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD0EE4E92503D83200505FBD /* en */,
+				DD0EE4EB2503D83700505FBD /* zh-Hans */,
+				DD0EE4EC2503D83800505FBD /* fr */,
+				DD0EE4ED2503D83A00505FBD /* es-419 */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -482,7 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2.0;
+				CURRENT_PROJECT_VERSION = 1.2.1;
 				DEVELOPMENT_ASSET_PATHS = "\"HornRoutines/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -491,7 +509,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.HornRoutines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -504,7 +522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2.0;
+				CURRENT_PROJECT_VERSION = 1.2.1;
 				DEVELOPMENT_ASSET_PATHS = "\"HornRoutines/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -513,7 +531,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.HornRoutines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
