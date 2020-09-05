@@ -21,8 +21,7 @@
 		9CB68307247076C2000D4A67 /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB68306247076C2000D4A67 /* ExerciseDetailView.swift */; };
 		9CB68309247076D7000D4A67 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB68308247076D7000D4A67 /* SettingsView.swift */; };
 		9CB6830B247076EA000D4A67 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6830A247076EA000D4A67 /* Model.swift */; };
-		9CB6830D247076F6000D4A67 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6830C247076F6000D4A67 /* SettingsModel.swift */; };
-		9CB6830F24707708000D4A67 /* FavoritesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6830E24707708000D4A67 /* FavoritesModel.swift */; };
+		DD0EE4D92503CEB000505FBD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD0EE4DB2503CEB000505FBD /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +62,10 @@
 		9CB68306247076C2000D4A67 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
 		9CB68308247076D7000D4A67 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9CB6830A247076EA000D4A67 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		9CB6830C247076F6000D4A67 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
-		9CB6830E24707708000D4A67 /* FavoritesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModel.swift; sourceTree = "<group>"; };
+		DD0EE4DA2503CEB000505FBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DD0EE4DC2503CEBF00505FBD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DD0EE4DD2503CEC900505FBD /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DD0EE4DE2503CED200505FBD /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 		9C694C28246ED97000BCD03B = {
 			isa = PBXGroup;
 			children = (
+				DD0EE4DB2503CEB000505FBD /* Localizable.strings */,
 				9C694C33246ED97000BCD03B /* HornRoutines */,
 				9C694C4A246ED97100BCD03B /* HornRoutinesTests */,
 				9C694C55246ED97100BCD03B /* HornRoutinesUITests */,
@@ -124,8 +126,6 @@
 				9CB68306247076C2000D4A67 /* ExerciseDetailView.swift */,
 				9CB68308247076D7000D4A67 /* SettingsView.swift */,
 				9CB6830A247076EA000D4A67 /* Model.swift */,
-				9CB6830C247076F6000D4A67 /* SettingsModel.swift */,
-				9CB6830E24707708000D4A67 /* FavoritesModel.swift */,
 				9C694C3A246ED97100BCD03B /* Assets.xcassets */,
 				9C694C3F246ED97100BCD03B /* LaunchScreen.storyboard */,
 				9C694C42246ED97100BCD03B /* Info.plist */,
@@ -246,6 +246,9 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"es-419",
+				fr,
 			);
 			mainGroup = 9C694C28246ED97000BCD03B;
 			productRefGroup = 9C694C32246ED97000BCD03B /* Products */;
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C694C41246ED97100BCD03B /* LaunchScreen.storyboard in Resources */,
+				DD0EE4D92503CEB000505FBD /* Localizable.strings in Resources */,
 				9C694C3E246ED97100BCD03B /* Preview Assets.xcassets in Resources */,
 				9C694C3B246ED97100BCD03B /* Assets.xcassets in Resources */,
 			);
@@ -296,9 +300,7 @@
 				9CB68309247076D7000D4A67 /* SettingsView.swift in Sources */,
 				9C694C35246ED97000BCD03B /* AppDelegate.swift in Sources */,
 				9CB6830124707685000D4A67 /* MainView.swift in Sources */,
-				9CB6830F24707708000D4A67 /* FavoritesModel.swift in Sources */,
 				9CB68305247076AA000D4A67 /* ListView.swift in Sources */,
-				9CB6830D247076F6000D4A67 /* SettingsModel.swift in Sources */,
 				9CB6830324707695000D4A67 /* RoutineView.swift in Sources */,
 				9C694C37246ED97000BCD03B /* SceneDelegate.swift in Sources */,
 				9C694C39246ED97000BCD03B /* ContentView.swift in Sources */,
@@ -345,6 +347,17 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		DD0EE4DB2503CEB000505FBD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD0EE4DA2503CEB000505FBD /* en */,
+				DD0EE4DC2503CEBF00505FBD /* zh-Hans */,
+				DD0EE4DD2503CEC900505FBD /* es-419 */,
+				DD0EE4DE2503CED200505FBD /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -352,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -412,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -467,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2.0;
 				DEVELOPMENT_ASSET_PATHS = "\"HornRoutines/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -475,6 +491,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.HornRoutines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -487,6 +504,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2.0;
 				DEVELOPMENT_ASSET_PATHS = "\"HornRoutines/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -495,6 +513,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.HornRoutines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -8,17 +8,43 @@
 
 import SwiftUI
 
+/**
+ The Daily routine is shown in this view. User settings are checked on view load, and from user settings a new routine is generated.
+ */
 struct RoutineView: View {
+    /**
+    The user selected settings. Used to determine what exercises to select for the routine. Settings are determined in SettingsView.swift
+    */
     @EnvironmentObject var settings: settingsModel
+    
+    /**
+    The user selected favorites.
+    */
     @EnvironmentObject var favorites: FavoritesModel
     
+    /**
+    The current presentation mode of the view. By exposing this variable the view is able to dismiss itself and return to the previous view (MainView.swift)
+    */
     @Environment(\.presentationMode) var presentationMode
     
+    /**
+    State variable used to determine whether or not the finishedRoutine modal is displayed.
+    */
     @State private var finishedRoutine = false
     
+    /**
+    The generated routine stored as an array of exercises. Initialized to an arbitrary set of exercises to avoid compiler complaints and is updated on view load according to user defined settings.
+    */
     @State var routine = ["1"]
+    
+    /**
+    The index of the current exercise in routine array. Incremented by the user after performing the exercise.
+    */
     @State var thisExercise = 0
     
+    /**
+     The user interface
+     */
     var body: some View {
         VStack() {
             Image(routine[thisExercise])
@@ -28,13 +54,14 @@ struct RoutineView: View {
         .alert(isPresented: $finishedRoutine) {
             Alert(title: Text("Daily Routine Complete!"), dismissButton: .default(Text("Return")) {
                 self.presentationMode.wrappedValue.dismiss()
-                })
+            })
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarTitle(
             Text("\(self.thisExercise + 1)/\(self.routine.count)")
-                .font(.headline)
-            , displayMode: .inline)
+                .font(.headline),
+            displayMode: .inline
+        )
         .navigationBarItems(leading: Button(action: {
             self.getPreviousExercise()
         }) {
@@ -46,22 +73,23 @@ struct RoutineView: View {
             }
         }, trailing: HStack {
             Button(action: {
-                    if self.favorites.contains(self.routine[self.thisExercise]) {
-                        self.favorites.remove(self.routine[self.thisExercise])
-                    } else {
-                        self.favorites.add(self.routine[self.thisExercise])
-                    }
-                }) {
-                    favorites.contains(routine[thisExercise]) ?
-                        Image(systemName: "heart.fill")
-                            .font(.headline)
-                            .foregroundColor(.red)
-                        :
-                        Image(systemName: "heart")
-                            .font(.headline)
-                            .foregroundColor(.yellow)
+                if self.favorites.contains(self.routine[self.thisExercise]) {
+                    self.favorites.remove(self.routine[self.thisExercise])
+                } else {
+                    self.favorites.add(self.routine[self.thisExercise])
                 }
-                Button(action: {
+            }) {
+                favorites.contains(routine[thisExercise])
+                    ?
+                    Image(systemName: "heart.fill")
+                        .font(.headline)
+                        .foregroundColor(.red)
+                    :
+                    Image(systemName: "heart")
+                        .font(.headline)
+                        .foregroundColor(.yellow)
+            }
+            Button(action: {
                 self.getNextExercise()
             }) {
                 HStack {
@@ -82,11 +110,11 @@ struct RoutineView: View {
      Generates a random routine from available exercises
      */
     func generateRoutine() {
-        
-        checkDefaults()
-        self.settings.objectWillChange.send()
         var tempExercise: String
         var newRoutine: [String] = []
+
+        checkDefaults()
+        self.settings.objectWillChange.send()
         
         /// Adds one long tone
         if self.settings.longTonesToggle {
@@ -149,7 +177,6 @@ struct RoutineView: View {
                 } while newRoutine.contains(tempExercise)
                 newRoutine.append(tempExercise)
             }
-            
         }
 
         /// Adds two variable articulation
@@ -167,7 +194,6 @@ struct RoutineView: View {
                 } while newRoutine.contains(tempExercise)
                 newRoutine.append(tempExercise)
             }
-            
         }
 
         /// Adds one scale
@@ -217,6 +243,10 @@ struct RoutineView: View {
         }
     }
     
+    /**
+    Checks the user defaults to make sure they have been initialized, and if not, initializes all settings to defaults.
+    Settings may not be initialized in user launches app for the first time.
+    */
     func checkDefaults() {
         if !settings.longTonesToggle &&
             !settings.slowLipSlursToggle &&
