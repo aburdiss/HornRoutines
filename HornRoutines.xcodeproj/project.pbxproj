@@ -23,6 +23,13 @@
 		9CB6830B247076EA000D4A67 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6830A247076EA000D4A67 /* Model.swift */; };
 		DD0EE4D92503CEB000505FBD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD0EE4DB2503CEB000505FBD /* Localizable.strings */; };
 		DD0EE4E82503D83200505FBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD0EE4EA2503D83200505FBD /* InfoPlist.strings */; };
+		DD98A84D252A1CD900BDB232 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98A84C252A1CD900BDB232 /* FavoritesView.swift */; };
+		DD98A858252A1CE800BDB232 /* CustomListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98A857252A1CE800BDB232 /* CustomListView.swift */; };
+		DD98A85D252A1CF200BDB232 /* CustomRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98A85C252A1CF200BDB232 /* CustomRoutineView.swift */; };
+		DD98A862252A1CFC00BDB232 /* CreateCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98A861252A1CFC00BDB232 /* CreateCustomView.swift */; };
+		DD98A867252A1D1200BDB232 /* CustomPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98A866252A1D1200BDB232 /* CustomPreviewView.swift */; };
+		DD98A86C252A1D2500BDB232 /* ExercisePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98A86B252A1D2400BDB232 /* ExercisePickerView.swift */; };
+		DD98A871252A1D2A00BDB232 /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98A870252A1D2A00BDB232 /* HomeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +78,13 @@
 		DD0EE4EB2503D83700505FBD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		DD0EE4EC2503D83800505FBD /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD0EE4ED2503D83A00505FBD /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		DD98A84C252A1CD900BDB232 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		DD98A857252A1CE800BDB232 /* CustomListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListView.swift; sourceTree = "<group>"; };
+		DD98A85C252A1CF200BDB232 /* CustomRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoutineView.swift; sourceTree = "<group>"; };
+		DD98A861252A1CFC00BDB232 /* CreateCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCustomView.swift; sourceTree = "<group>"; };
+		DD98A866252A1D1200BDB232 /* CustomPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPreviewView.swift; sourceTree = "<group>"; };
+		DD98A86B252A1D2400BDB232 /* ExercisePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisePickerView.swift; sourceTree = "<group>"; };
+		DD98A870252A1D2A00BDB232 /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,20 +136,22 @@
 		9C694C33246ED97000BCD03B /* HornRoutines */ = {
 			isa = PBXGroup;
 			children = (
-				9C694C34246ED97000BCD03B /* AppDelegate.swift */,
-				9C694C36246ED97000BCD03B /* SceneDelegate.swift */,
 				9C694C38246ED97000BCD03B /* ContentView.swift */,
 				9CB6830024707685000D4A67 /* MainView.swift */,
 				9CB6830224707695000D4A67 /* RoutineView.swift */,
-				9CB68304247076AA000D4A67 /* ListView.swift */,
-				9CB68306247076C2000D4A67 /* ExerciseDetailView.swift */,
+				DD98A84C252A1CD900BDB232 /* FavoritesView.swift */,
+				DD98A84B252A1BC100BDB232 /* List View */,
+				DD98A84A252A1BBC00BDB232 /* Custom View */,
 				9CB68308247076D7000D4A67 /* SettingsView.swift */,
+				DD98A849252A1BB100BDB232 /* Constructions */,
 				9CB6830A247076EA000D4A67 /* Model.swift */,
 				9C694C3A246ED97100BCD03B /* Assets.xcassets */,
 				9C694C3F246ED97100BCD03B /* LaunchScreen.storyboard */,
 				9C694C42246ED97100BCD03B /* Info.plist */,
-				9C694C3C246ED97100BCD03B /* Preview Content */,
 				DD0EE4EA2503D83200505FBD /* InfoPlist.strings */,
+				9C694C34246ED97000BCD03B /* AppDelegate.swift */,
+				9C694C36246ED97000BCD03B /* SceneDelegate.swift */,
+				9C694C3C246ED97100BCD03B /* Preview Content */,
 			);
 			path = HornRoutines;
 			sourceTree = "<group>";
@@ -164,6 +180,35 @@
 				9C694C58246ED97100BCD03B /* Info.plist */,
 			);
 			path = HornRoutinesUITests;
+			sourceTree = "<group>";
+		};
+		DD98A849252A1BB100BDB232 /* Constructions */ = {
+			isa = PBXGroup;
+			children = (
+				DD98A86B252A1D2400BDB232 /* ExercisePickerView.swift */,
+				DD98A870252A1D2A00BDB232 /* HomeButton.swift */,
+			);
+			path = Constructions;
+			sourceTree = "<group>";
+		};
+		DD98A84A252A1BBC00BDB232 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				DD98A857252A1CE800BDB232 /* CustomListView.swift */,
+				DD98A85C252A1CF200BDB232 /* CustomRoutineView.swift */,
+				DD98A861252A1CFC00BDB232 /* CreateCustomView.swift */,
+				DD98A866252A1D1200BDB232 /* CustomPreviewView.swift */,
+			);
+			path = "Custom View";
+			sourceTree = "<group>";
+		};
+		DD98A84B252A1BC100BDB232 /* List View */ = {
+			isa = PBXGroup;
+			children = (
+				9CB68304247076AA000D4A67 /* ListView.swift */,
+				9CB68306247076C2000D4A67 /* ExerciseDetailView.swift */,
+			);
+			path = "List View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +274,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Alex Burdiss";
 				TargetAttributes = {
 					9C694C30246ED97000BCD03B = {
@@ -302,10 +347,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD98A871252A1D2A00BDB232 /* HomeButton.swift in Sources */,
+				DD98A84D252A1CD900BDB232 /* FavoritesView.swift in Sources */,
 				9CB6830B247076EA000D4A67 /* Model.swift in Sources */,
+				DD98A867252A1D1200BDB232 /* CustomPreviewView.swift in Sources */,
+				DD98A85D252A1CF200BDB232 /* CustomRoutineView.swift in Sources */,
 				9CB68307247076C2000D4A67 /* ExerciseDetailView.swift in Sources */,
+				DD98A858252A1CE800BDB232 /* CustomListView.swift in Sources */,
 				9CB68309247076D7000D4A67 /* SettingsView.swift in Sources */,
 				9C694C35246ED97000BCD03B /* AppDelegate.swift in Sources */,
+				DD98A862252A1CFC00BDB232 /* CreateCustomView.swift in Sources */,
+				DD98A86C252A1D2500BDB232 /* ExercisePickerView.swift in Sources */,
 				9CB6830124707685000D4A67 /* MainView.swift in Sources */,
 				9CB68305247076AA000D4A67 /* ListView.swift in Sources */,
 				9CB6830324707695000D4A67 /* RoutineView.swift in Sources */,
@@ -406,6 +458,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -430,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -467,6 +520,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -485,7 +539,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -500,7 +554,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2.1;
+				CURRENT_PROJECT_VERSION = 2.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"HornRoutines/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -509,7 +563,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.HornRoutines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -522,7 +576,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2.1;
+				CURRENT_PROJECT_VERSION = 2.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"HornRoutines/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -531,7 +585,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.HornRoutines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

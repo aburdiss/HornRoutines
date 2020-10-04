@@ -15,7 +15,7 @@ struct ExerciseDetailView: View {
     /**
      The user selected favorites
      */
-    @EnvironmentObject var favorites: FavoritesModel
+    @EnvironmentObject var favorites: Favorites
     
     /**
      The image name to display

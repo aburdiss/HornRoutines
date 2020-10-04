@@ -15,12 +15,12 @@ struct RoutineView: View {
     /**
     The user selected settings. Used to determine what exercises to select for the routine. Settings are determined in SettingsView.swift
     */
-    @EnvironmentObject var settings: settingsModel
+    @EnvironmentObject var settings: Settings
     
     /**
     The user selected favorites.
     */
-    @EnvironmentObject var favorites: FavoritesModel
+    @EnvironmentObject var favorites: Favorites
     
     /**
     The current presentation mode of the view. By exposing this variable the view is able to dismiss itself and return to the previous view (MainView.swift)
@@ -57,11 +57,7 @@ struct RoutineView: View {
             })
         }
         .navigationBarBackButtonHidden(true)
-        .navigationBarTitle(
-            Text("\(self.thisExercise + 1)/\(self.routine.count)")
-                .font(.headline),
-            displayMode: .inline
-        )
+        .navigationBarTitle(Text("\(self.thisExercise + 1)/\(self.routine.count)"), displayMode: .inline)
         .navigationBarItems(leading: Button(action: {
             self.getPreviousExercise()
         }) {
@@ -272,7 +268,7 @@ struct RoutineView: View {
 
 struct RoutineView_Previews: PreviewProvider {
     static var previews: some View {
-        RoutineView().environmentObject(settingsModel()).environmentObject(FavoritesModel())
+        RoutineView().environmentObject(Settings()).environmentObject(Favorites())
     }
 }
 

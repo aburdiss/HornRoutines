@@ -21,18 +21,12 @@ struct MainView: View {
                 NavigationLink(destination:
                     RoutineView()
                 ) {
-                    HStack {
-                        Text("Begin Routine")
-                            .font(.title)
-                        Image(systemName: "play")
-                            .font(.title)
-                    }
-                    .padding()
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 12)
-                            .stroke(Color.yellow, lineWidth: 2)
-                    )
-                    .padding()
+                    HomeButton(text: "Begin Routine")
+                }
+                NavigationLink(destination:
+                    FavoritesView()
+                ) {
+                    HomeButton(text: "Randomize Favorites")
                 }
             }
             .navigationBarTitle("Horn Routines")
