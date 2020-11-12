@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 /**
 Array of all long tone exercises in the app
 */
@@ -285,4 +286,11 @@ class CustomRoutines: ObservableObject {
     func getAllRoutines() -> [CustomRoutine] {
         return self.routines
     }
+}
+
+/**
+ Overrides default yellow color with custom color.
+ */
+extension Color {
+    static let yellow = Color("AccentColor")
 }

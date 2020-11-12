@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  HornRoutines
+
+  Created by Alexander Burdiss on 9/5/20.
+  Copyright © 2020 Alex Burdiss. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "프렌치호른 루틴";
+"CFBundleName" = "프렌치호른 루틴";
